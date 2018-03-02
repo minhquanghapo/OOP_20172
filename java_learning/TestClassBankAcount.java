@@ -40,6 +40,12 @@ class BankAcount
 		System.out.println("Giao dich thanh cong, so tien trong tai khoan la: !!" + (this.balance - creditBlance));
 		return this.balance -= creditBlance;
 	}
+
+	public int test(float x)
+	{
+		 System.out.println("1");
+		 return 1;
+	}
 }
 
 public class TestClassBankAcount
@@ -48,5 +54,6 @@ public class TestClassBankAcount
 	BankAcount bka = new BankAcount("Hoang Minh Quang", true, 18);
 	bka.Debit(100000);
 	bka.Credit(50000);
+	float z = 0;
 	}
 }
